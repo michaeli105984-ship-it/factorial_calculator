@@ -15,14 +15,12 @@ def factorial():
     else:
         total = 1
         answer_string = ""
-        i = number
-        while i >= 1:
+       for i in range(number, 0, -1):
             total = total * i
             if i == 1:
                 answer_string = answer_string + str(i)
             else:
                 answer_string = answer_string + str(i) + " * "
-            i = i - 1
         print(str(number) + "! = " + answer_string + " = " + str(total))
 # You should not need to change any code below this point
 def main():
